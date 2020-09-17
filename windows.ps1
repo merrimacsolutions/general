@@ -2,7 +2,7 @@
 New-Item -ItemType directory -Path C:\temp\
 
 # Download .zip file with beats already compiled for deployment. (merrimac-internal)
-# Invoke-WebRequest "https://merrimacsolutions.sharefile.com/d-s68b525de6cb4fd2b" -OutFile "C:\temp\modified_uncompressed.zip"
+Invoke-WebRequest "https://merrimacsolutions.sharefile.com/d-s68b525de6cb4fd2b" -OutFile "C:\temp\modified_uncompressed.zip"
 
 # Invoke and use unzip to decompress zip file from previous step.
 Add-Type -AssemblyName System.IO.Compression.FileSystem
