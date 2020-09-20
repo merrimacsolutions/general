@@ -48,6 +48,7 @@ Invoke-expression -Command ".\install-service-packetbeat.ps1"
 Start-Service packetbeat
 
 # Clean-up and file removal.
+Set-Location "C:\temp\"
 Remove-Item "C:\temp\modified_uncompressed.zip"
 Remove-Item -LiteralPath "C:\temp\modified_uncompressed" -Force -Recurse
 Remove-Item "C:\temp\npcap-0.9997.exe"
