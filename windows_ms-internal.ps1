@@ -18,7 +18,7 @@ unzip "C:\temp\modified_uncompressed.zip" "C:\temp\modified_uncompressed"
 
 # Metricbeat installation.
 Set-Location "C:\temp\modified_uncompressed\modified_uncompressed\Metricbeat"
-Copy-Item -Path "C:\temp\modified_uncompressed\modified_uncompressed\Metricbeat\*" -Destination "C:\Program Files\Metricbeat" -Recurse
+Copy-Item -Path "C:\temp\modified_uncompressed\modified_uncompressed\Metricbeat\" -Destination "C:\Program Files\Metricbeat" -Recurse
 Set-Location "C:\Program Files\Metricbeat"
 Invoke-expression -Command ".\install-service-metricbeat.ps1"
 Start-Service metricbeat
