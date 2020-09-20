@@ -5,7 +5,7 @@ Set-ExecutionPolicy Unrestricted
 New-Item -ItemType directory -Path C:\temp\
 
 # Download .zip file with beats already compiled for deployment. (merrimac-internal)
-Invoke-WebRequest "Invoke-WebRequest "https://merrimac-elastic.s3.us-east-2.amazonaws.com/beats_modified_uncompressed.zip" -OutFile "C:\temp\modified_uncompressed.zip"
+Invoke-WebRequest "https://merrimac-elastic.s3.us-east-2.amazonaws.com/beats_modified_uncompressed.zip" -OutFile "C:\temp\modified_uncompressed.zip"
 
 # Invoke and use unzip to decompress zip file from previous step.
 Add-Type -AssemblyName System.IO.Compression.FileSystem
