@@ -34,7 +34,7 @@ Start-Service winlogbeat
 Set-Location "C:\temp\modified_uncompressed\modified_uncompressed\Auditbeat"
 Copy-Item "C:\temp\modified_uncompressed\modified_uncompressed\Auditbeat" -Destination "C:\Program Files\Auditbeat" -Recurse
 Set-Location "C:\Program Files\Auditbeat"
-Invoke-expression -Command "C:\Program Files\Auditbeat\.\install-service-Auditbeat.ps1"
+Invoke-expression -Command ".\install-service-Auditbeat.ps1"
 Start-Service auditbeat
 
 # Packetbeat installation
@@ -44,7 +44,7 @@ Set-Location "C:\temp\"
 Set-Location "C:\temp\modified_uncompressed\modified_uncompressed\Packetbeat"
 Copy-Item "C:\temp\modified_uncompressed\modified_uncompressed\Packetbeat" -Destination "C:\Program Files\Packetbeat" -Recurse
 Set-Location "C:\Program Files\Packetbeat"
-Invoke-expression -Command "C:\Program Files\Packetbeat\.\install-service-packetbeat.ps1"
+Invoke-expression -Command ".\install-service-packetbeat.ps1"
 Start-Service packetbeat
 
 # Clean-up and file removal.
