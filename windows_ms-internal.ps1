@@ -40,7 +40,7 @@ Start-Service auditbeat
 # Packetbeat installation
 Invoke-WebRequest "https://nmap.org/npcap/dist/npcap-0.9997.exe" -OutFile "C:\temp\npcap-0.9997.exe"
 Set-Location "C:\temp\"
-# Start-Process .\npcap-0.9997.exe /S -NoNewWindow -Wait -PassThru
+Start-Process .\npcap-0.9997.exe
 Set-Location "C:\temp\modified_uncompressed\modified_uncompressed\Packetbeat"
 Copy-Item "C:\temp\modified_uncompressed\modified_uncompressed\Packetbeat" -Destination "C:\Program Files\Packetbeat" -Recurse
 Set-Location "C:\Program Files\Packetbeat"
