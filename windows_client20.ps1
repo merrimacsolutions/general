@@ -1,3 +1,6 @@
+#Allow Powershell Scripts to run.
+Set-ExecutionPolicy Unrestricted
+
 # Create Temperary Directory if none exsists.
 New-Item -ItemType directory -Path C:\temp\
 
