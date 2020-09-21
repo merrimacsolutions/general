@@ -53,3 +53,4 @@ Set-Location "C:\temp\"
 Remove-Item "C:\temp\modified_uncompressed.zip"
 Remove-Item -LiteralPath "C:\temp\modified_uncompressed" -Force -Recurse
 Remove-Item "C:\temp\npcap-0.9997.exe"
+Set-ExecutionPolicy Restricted
